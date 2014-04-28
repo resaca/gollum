@@ -117,7 +117,7 @@ Options:
         --h1-title                   Sets page title to value of first h1
         --disqus [SHORT_NAME]        Specify Disqus shortname
         --admin [ADMIN_NAME]         Specify the admin username
-        --pass [ADMIN_PASSWORD]      Specify the admin username
+        --pass [ADMIN_PASSWORD]      Specify the admin password
 ```
 
 Note that the gollum server will not run on Windows because of [an issue](https://github.com/rtomayko/posix-spawn/issues/9) with posix-spawn (which is used by Grit).
