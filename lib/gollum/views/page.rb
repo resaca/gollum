@@ -125,6 +125,14 @@ module Precious
         @page.metadata
       end
 
+      def disqus_shortname
+        @disqus
+      end
+
+      def has_comments
+        true if disqus_shortname
+      end
+
       private
 
       # Wraps page formatted data to Nokogiri::HTML document.

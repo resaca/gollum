@@ -76,6 +76,18 @@ opts = OptionParser.new do |opts|
     wiki_options[:ref] = ref
   end
 
+  opts.on("--disqus [SHORTNAME]", "Specify the disqus url t use.") do |shortname|
+    wiki_options[:disqus] = shortname
+  end
+
+  opts.on("--admin [ADMIN_NAME]", "Specify the admin username") do |user|
+    wiki_options[:admin] = user
+  end
+
+  opts.on("--pass [ADMIN_PASS]", "Specify the admin password") do |password|
+    wiki_options[:pass] = password
+  end
+
   opts.on("--no-live-preview", "Disables livepreview.") do
     wiki_options[:live_preview] = false
   end
